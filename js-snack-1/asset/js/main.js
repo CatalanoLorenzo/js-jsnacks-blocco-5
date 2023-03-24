@@ -53,11 +53,15 @@ const zucchine = [
         lunfhezza:22
     },
 ]
+// creo un valore iniziale per la somma
 let somma = 0
 console.log(somma);
+// ciclo nell'array
 zucchine.forEach((thy)=>{
+    // mi prendo il valore del peso del singolo oggetto
     const {peso} = thy
     console.log(peso);
+    //lo sommo al valore della somma
     somma += peso
 })
 console.log(somma + 'kg');
