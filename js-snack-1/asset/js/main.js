@@ -60,4 +60,4 @@ zucchine.forEach((thy)=>{
     console.log(peso);
     somma += peso
 })
-console.log(somma);
+console.log(somma + 'kg');
