@@ -49,9 +49,15 @@ const zucchine = [
     },
     {
         varieta:'Cocozelle',
-        peso:250,
+        peso:251,
         lunfhezza:22
     },
 ]
-const  { ,peso} = zucchine
-console.log(peso);
+let somma = 0
+console.log(somma);
+zucchine.forEach((thy)=>{
+    const {peso} = thy
+    console.log(peso);
+    somma += peso
+})
+console.log(somma);
