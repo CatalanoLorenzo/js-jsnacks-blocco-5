@@ -4,9 +4,12 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 const array = ['a', 'b', 'c', 'd', 'e']
 
 let a = 2
-let b = 4
+let b = 5
 
 const new_array = newArray_whit_elementpositio_a_and_b(array, a, b)
+
+
+console.log(new_array);
 
 /**
  * 
@@ -16,19 +19,17 @@ const new_array = newArray_whit_elementpositio_a_and_b(array, a, b)
  */
 function newArray_whit_elementpositio_a_and_b(array, a, b) {
     // se verifica la consizione a piu piccolo di b e b piu piccolo della lunghezza dell'array
-    if (a < b && b <= array.length) {
-        //associa ad una variabile il valore dell'array con index a
-        const valoreA = array[a]
-        //associa ad una variabile il valore dell'array con index b
-        const valoreB = array[b]
-        //crea un nuovo array con i valori A & B
-        const newArray = [valoreA, valoreB]
-        console.log(newArray);
-        //ritorna l'array
+    
+        
+    let newArray = []
+         array.filter((e,i) => {
+            console.log(e);
+            if (a <= i && i <= b) {
+                console.log(e,i);
+                newArray.push(e)
+              }
+        })
         return newArray
-    }
-    else {
-        //se verifica la consizione a piu piccolo di b e b piu piccolo della lunghezza dell'array se è negativa
-        return console.log('error !a<b && b<=array.length');
-    }
+         
+      
 }
